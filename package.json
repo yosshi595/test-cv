@@ -1,39 +1,38 @@
 {
-    "name": "test",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "watch": "run-p watch:*",
-      "watch:browser": "browser-sync start --proxy 'local.stlassh.com' --files='./*.css, **/index.php'",
-      "watch:build": "watch 'npm run build' ./scss/",
-      "build": "run-s build:scss build:stylelint build:autoprefixer",
-      "build:stylelint": "stylelint --fix './*.css'",
-      "build:scss": "node-sass --include-path scss scss/style.scss style.css --output-style compact",
-      "build:autoprefixer": "postcss --use autoprefixer --no-map style.css -d ./"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {},
-    "browserslist": [
-      "last 2 versions",
-      "Android >= 4",
-      "iOS >= 9"
-    ],
-    "devDependencies": {
-      "autoprefixer": "^9.7.4",
-      "browser-sync": "^2.26.7",
-      "node-sass": "^4.13.1",
-      "npm-run-all": "^4.1.5",
-      "opener": "^1.5.1",
-      "postcss": "^7.0.26",
-      "postcss-cli": "^7.1.0",
-      "stylelint": "^13.1.0",
-      "stylelint-config-property-sort-order-smacss": "^6.0.0",
-      "stylelint-config-standard": "^20.0.0",
-      "stylelint-order": "^4.0.0",
-      "stylelint-scss": "^3.14.2",
-      "watch": "^1.0.2"
-    }
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "run-p watch:*",
+    "watch:browser": "browser-sync start --proxy 'local.stlassh.com' --files='./*.css, **/index.php'",
+    "watch:build": "watch 'npm run build' ./scss/",
+    "build": "run-s build:scss build:stylelint build:autoprefixer",
+    "build:stylelint": "stylelint --fix './*.css'",
+    "build:scss": "node-sass --include-path scss scss/style.scss style.css --output-style compact",
+    "build:autoprefixer": "postcss --use autoprefixer --no-map style.css -d ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "browserslist": [
+    "last 2 versions",
+    "Android >= 4",
+    "iOS >= 9"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "opener": "^1.5.1",
+    "postcss": "^7.0.26",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.1.0",
+    "stylelint-config-property-sort-order-smacss": "^6.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.14.2",
+    "watch": "^1.0.2"
   }
-  
+}
